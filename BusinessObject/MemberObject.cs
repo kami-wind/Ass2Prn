@@ -1,0 +1,25 @@
+﻿using System.Diagnostics.Metrics;
+
+namespace BusinessObject;
+
+public class MemberObject
+{
+    public int MemberID { get; set; }
+    public string? Email { get; set; }
+    public string? CompanyName { get; set; }
+    public string? City { get; set; }
+    public string? Country { get; set; }
+    public string? Password { get; set; }
+
+    public MemberObject(int memberID, string email, string companyName, string city, string country, string password)
+    {
+        MemberID = memberID;
+        Email = email;
+        CompanyName = companyName;
+        City = city;
+        Country = country;
+        Password = password;
+    }
+
+    public MemberObject() { }
+}
